@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOAL U | Apply & Support</title>
+    <meta name="description" content="Apply to SOAL U or Support our Program.">
+    <!-- Google Fonts: Inter & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    <!-- Material Symbols -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo" style="text-decoration: none;">
+                <img src="images/logo.png" alt="SOAL U Logo">
+                <div style="display: flex; flex-direction: column; align-items: flex-start; margin-left: 0.5rem;">
+                    <span style="font-size: 1.25rem; font-weight: 800; line-height: 1; color: var(--text-dark);">SOAL U</span>
+                    <span style="font-size: 0.75rem; font-weight: 600; font-family: 'Inter', sans-serif; letter-spacing: 0.05em; color: var(--primary); text-transform: uppercase; margin-top: 0.2rem;">Summer of a Lifetime</span>
+                </div>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="program-experience.html">Program Experience</a>
+                <a href="apply-support.html" class="nav-cta">Apply Now</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <span class="material-symbols-rounded">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="section" style="padding-top: 150px; background-color: var(--white);">
+        <div class="container">
+            <div class="grid-2">
+                <!-- Apply Form -->
+                <div>
+                    <h1 class="title-lg" style="margin-bottom: 1rem; color: var(--primary);">APPLY TO SOAL U</h1>
+                    <p class="subtitle" style="margin-bottom: 2rem;">Students interested in attending should submit the following information:</p>
+                    
+                    <form action="https://formspree.io/f/xwvwzddy" method="POST" style="display: flex; flex-direction: column; gap: 1rem;">
+                        <input type="text" name="Student Name" placeholder="Student Name" required style="padding: 1rem; border-radius: 8px; border: 1px solid #ccc; font-family: inherit;">
+                        <input type="text" name="Parent / Guardian Name" placeholder="Parent / Guardian Name" required style="padding: 1rem; border-radius: 8px; border: 1px solid #ccc; font-family: inherit;">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                            <input type="email" name="Email" placeholder="Email" required style="padding: 1rem; border-radius: 8px; border: 1px solid #ccc; font-family: inherit;">
+                            <input type="tel" name="Phone" placeholder="Phone" required style="padding: 1rem; border-radius: 8px; border: 1px solid #ccc; font-family: inherit;">
+                        </div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                            <input type="text" name="School" placeholder="School" required style="padding: 1rem; border-radius: 8px; border: 1px solid #ccc; font-family: inherit;">
+                            <input type="text" name="Grade" placeholder="Grade" required style="padding: 1rem; border-radius: 8px; border: 1px solid #ccc; font-family: inherit;">
+                        </div>
+                        <label for="essay" style="font-weight: 500; font-size: 0.875rem; color: var(--text-dark); margin-top: 0.5rem;">Essay question: Why are you interested in participating in SOAL U and how would the experience help you grow as a leader?</label>
+                        <textarea id="essay" name="Essay question" placeholder="Write your essay here..." required style="padding: 1rem; border-radius: 8px; border: 1px solid #ccc; font-family: inherit; min-height: 150px;"></textarea>
+                        
+                        <button type="submit" class="btn btn-primary" style="margin-top: 1rem; width: fit-content; padding: 1rem 3rem;">SUBMIT APPLICATION</button>
+                    </form>
+                </div>
+
+                <!-- Support Section -->
+                <div>
+                    <div id="support" style="background: var(--bg-gray); padding: 2.5rem; border-radius: var(--radius); border-left: 4px solid var(--primary); box-shadow: var(--shadow-sm); position: sticky; top: 100px;">
+                        <h2 class="title-md" style="margin-bottom: 1rem;">SUPPORT SOAL U</h2>
+                        <p class="text-body" style="margin-bottom: 1rem;">Donations help provide access to students and support program operations.</p>
+                        <p style="font-weight: 600; margin-bottom: 0.5rem; font-size: 0.875rem;">Funding supports:</p>
+                        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 2rem; color: var(--text-light);">
+                            <li>room and board</li>
+                            <li>books and materials</li>
+                            <li>transportation</li>
+                            <li>insurance</li>
+                            <li>faculty honorariums</li>
+                            <li>student program experiences</li>
+                        </ul>
+                        <button class="btn btn-outline" onclick="alert('Donation window opened!')">DONATE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section class="section bg-dark text-white" style="padding-bottom: 2rem;">
+        <div class="container">
+            <div style="background: rgba(255,255,255,0.05); border-radius: var(--radius); display: flex; overflow: hidden; align-items: stretch; max-width: 1000px; margin: 0 auto;">
+                <div style="width: 40%;">
+                    <img src="images/founder.png" alt="Brian Taylor, Founder" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                </div>
+                <div style="padding: 3rem; width: 60%; display: flex; flex-direction: column; justify-content: center;">
+                    <h2 class="title-md" style="margin-bottom: 1rem; color: var(--primary);">FOUNDER</h2>
+                    <h3 style="color: var(--white); font-size: 1.5rem; margin-bottom: 0.5rem; font-family: 'Outfit', sans-serif;">Brian Taylor</h3>
+                    <ul style="list-style: none; margin-bottom: 1.5rem; color: rgba(255,255,255,0.7); font-size: 0.875rem;" class="component-list">
+                        <li>Princeton University</li>
+                        <li>Professional Basketball Champion</li>
+                        <li>Educator and Youth Advocate</li>
+                    </ul>
+                    <p style="color: rgba(255,255,255,0.8); margin-bottom: 1rem;">Brian Taylor created SOAL U to provide students with the type of transformative educational exposure that shaped his own life journey—from the projects of Perth Amboy to Princeton University and beyond.</p>
+                    <p style="color: rgba(255,255,255,0.8);">SOAL U reflects his belief that exposure to great ideas and environments can change the trajectory of a young person's life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section bg-dark text-white" style="padding-top: 2rem;">
+        <div class="container" style="text-align: center;">
+            <h2 class="title-md" style="margin-bottom: 2rem; color: var(--primary);">CONTACT</h2>
+            <div class="grid-4" style="text-align: center; max-width: 900px; margin: 0 auto;">
+                <div>
+                    <span class="material-symbols-rounded" style="color: var(--white); font-size: 2rem; margin-bottom: 1rem;">location_on</span>
+                    <h4 style="color: var(--white); font-size: 1.25rem;">SOAL U</h4>
+                    <p style="color: rgba(255,255,255,0.7);">Princeton, New Jersey</p>
+                </div>
+                <div>
+                    <span class="material-symbols-rounded" style="color: var(--white); font-size: 2rem; margin-bottom: 1rem;">schedule</span>
+                    <h4 style="color: var(--white); font-size: 1.25rem;">Program Day</h4>
+                    <p style="color: rgba(255,255,255,0.7);">8:00 AM – 8:00 PM</p>
+                </div>
+                <div>
+                    <span class="material-symbols-rounded" style="color: var(--white); font-size: 2rem; margin-bottom: 1rem;">mail</span>
+                    <h4 style="color: var(--white); font-size: 1.25rem;">Email</h4>
+                    <p style="color: rgba(255,255,255,0.7);"><a href="mailto:info@soalu.org" style="color: var(--primary);">info@soalu.org</a></p>
+                </div>
+                <div>
+                    <span class="material-symbols-rounded" style="color: var(--white); font-size: 2rem; margin-bottom: 1rem;">phone</span>
+                    <h4 style="color: var(--white); font-size: 1.25rem;">Phone</h4>
+                    <p style="color: rgba(255,255,255,0.7);">(phone)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" style="margin-top: 0;">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col" style="padding-right: 2rem;">
+                    <img src="images/logo.png" alt="SOAL U" style="height: 60px; margin-bottom: 1rem; border-radius: 8px;">
+                    <p class="text-body">A Leadership Experience for the Next Generation. Shaping young lives through immersive learning at Princeton.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="program-experience.html">Program Experience</a></li>
+                        <li><a href="apply-support.html">Apply / Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Information</h4>
+                    <p style="color: rgba(255,255,255,0.7); margin-bottom: 0.5rem;">Princeton, New Jersey</p>
+                    <p style="color: rgba(255,255,255,0.7); margin-bottom: 0.5rem;">Program Day: 8:00 AM – 8:00 PM</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2026 SOAL U. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
